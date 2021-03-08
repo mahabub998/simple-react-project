@@ -10,11 +10,12 @@ const totals = data.reduce((total,data)=>total + parseFloat(data.salary ) , 0);
  
     return (
         <div>
+            <h1>Team Player</h1>
           {
              data.map(dt =>(
               <div>
-                  <h1>name : {dt.name}</h1>
-                  <h3>salary : {dt.salary}</h3>
+                  <h2>name : {dt.name}</h2>
+                  <h4>salary : {dt.salary}</h4>
 
                 
 
@@ -22,7 +23,7 @@ const totals = data.reduce((total,data)=>total + parseFloat(data.salary ) , 0);
              )
              )
           } 
-            <h1>total : {totals} </h1>
+            <h3>total : {totals} </h3>
         </div>
     );
 };

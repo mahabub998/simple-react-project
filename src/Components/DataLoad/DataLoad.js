@@ -21,6 +21,7 @@ const [dataRecived,setDataRecived] = useState([])
 
     return (
         <div>
+            
             <div className="dataShow">
                 {
                     Data.map(dt => <PlayerDataShow PlayerData={dt}dataPass={handelClick}key={dt.id}></PlayerDataShow>)
